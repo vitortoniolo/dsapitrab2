@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>webapp</title>
+</head>
+<body>
+    <main>
+        <a href="http://localhost:5000/auth/google" id="login-btn">Authenticate with Google</a>
+        <br>
+        <label>Titulo:</label>
+        <input type="text" id="titulo-input">
+        <br>
+        <label>Autor:</label>
+        <input type="text" id="autor-input">
+        <br>
+        <button id="add-livro-btn">Add Livro</button>
+
+        <br><br><br>
+        <div>
+            <input placeholder="Procurar livro"
+            id="search-input">
+            <button id="search-btn">Pesquisar</button>
+        </div>
+
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Deletar</th>
+                <th>Editar</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label> Titulo</label>
+            <input type="text" id="update-titulo-input">
+            <button id ="update-row-btn">Atualizar</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
